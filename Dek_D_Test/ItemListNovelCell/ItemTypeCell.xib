@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tahoma Regular font.ttf">
+            <string>Tahoma</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemTypeCell" customModule="Dek_D_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="74" height="26"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="74" height="26"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1j-g8-xil">
+                        <rect key="frame" x="1" y="1" width="72" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zo-lf-XLT">
+                                <rect key="frame" x="1" y="1" width="70" height="22"/>
+                                <fontDescription key="fontDescription" name="Tahoma" family="Tahoma" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1Zo-lf-XLT" secondAttribute="trailing" constant="1" id="3T5-y2-13x"/>
+                            <constraint firstItem="1Zo-lf-XLT" firstAttribute="leading" secondItem="f1j-g8-xil" secondAttribute="leading" constant="1" id="Dbk-jK-nJ6"/>
+                            <constraint firstItem="1Zo-lf-XLT" firstAttribute="top" secondItem="f1j-g8-xil" secondAttribute="top" constant="1" id="Ptm-vF-JAr"/>
+                            <constraint firstAttribute="bottom" secondItem="1Zo-lf-XLT" secondAttribute="bottom" constant="1" id="ZZw-TJ-Dl3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f1j-g8-xil" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="78z-oV-rAl"/>
+                <constraint firstItem="f1j-g8-xil" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="EOt-h2-h7e"/>
+                <constraint firstAttribute="bottom" secondItem="f1j-g8-xil" secondAttribute="bottom" constant="1" id="awQ-9P-h7f"/>
+                <constraint firstAttribute="trailing" secondItem="f1j-g8-xil" secondAttribute="trailing" constant="1" id="hq8-Hh-1GW"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="f1j-g8-xil" id="TBv-zn-aYJ"/>
+                <outlet property="titleLabel" destination="1Zo-lf-XLT" id="e8s-nw-jpT"/>
+            </connections>
+            <point key="canvasLocation" x="-55" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
